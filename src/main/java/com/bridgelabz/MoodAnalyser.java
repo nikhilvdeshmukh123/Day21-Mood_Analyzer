@@ -5,7 +5,16 @@ package com.bridgelabz;
  */
 public class MoodAnalyser {
 
-    public String analyseMood(String msg) {
+    private String msg;
+
+    public MoodAnalyser() {
+    }
+
+    public MoodAnalyser(String msg) {
+        this.msg = msg;
+    }
+
+    public String analyzeMood() {
         if (msg.contains("Sad")) {
             return "Sad";
         }
